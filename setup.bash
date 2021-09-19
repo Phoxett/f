@@ -6,6 +6,8 @@ sudo apt update
 sudo apt install wget software-properties-common apt-transport-https gparted virtualbox linux-generic linux-image-generic linux-headers-generic linux-signed-generic mono-complete
 sudo apt install default-jre -y
 wget https://files.nicehash.com/nhminer/nhos/nhos-1.2.8/image/nhos-1.2.8.img.gz
+#dd if=/home/phoxett/galliumos-3.1-braswell.iso | pv -s 2G | sudo dd of=sda
+
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt update
